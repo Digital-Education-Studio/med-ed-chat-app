@@ -1,3 +1,14 @@
+const {defineConfig} = require('@vue/cli-service')
+module.exports = defineConfig({
+  transpileDependencies: [
+    'vuetify'
+  ]
+})
 module.exports = {
-  publicPath: '/med-ed-chat-app/'
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/med-ed-chat-app/'
+  : '/',
+  transpileDependencies: [
+    'vuetify'
+  ]
 }
