@@ -1,0 +1,3 @@
+[submodule "dist"]
+    path = dist
+    url = https://github.com/Digital-Education-Studio/med-ed-chat-app.git
